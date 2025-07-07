@@ -27,32 +27,71 @@ public void setLattitude  (double aLattitude){
     return lattitude;
 
 }
- public void setLattitude (double aLattitude){
-        lattitude = aLattitude;
-}
+
     public Double getLattitude() {
 
     return lattitude;
 
 }
- public void setName (Double alongitude){
+ public void setLongitude (Double aLongitude){
         longitude = aLongitude;
 }
-    public String getlongitude() {
+    public Double getlongitude() {
 
     return longitude;
     }
      public void setdescription (String adescription){
-        name = adescription;
+        description = adescription;
 }
     public String getdescription() {
 
-    return ;
-     public void setName (String aName){
-        name = aName;
+    return description;
+    }
+     public void setAddress (String aAddress){
+        address = aAddress;
+
+     }
+     public String getaddress() {
+          return  address;
+
+     }
+     public void setCountury (String country){
+        country = country;
 }
-    public String getname() {
+    public String getCountury() {
 
-    return name;
+    return country;
+        
+}
+    public void setcity (String aCity){
+        city = aCity;
+}
+    public String getcity() {
 
+    return city;
+}
+   public void setpostcode (String aPostcode){
+       postcode = aPostcode;
+}
+    public String getpostcode() {
 
+    return postcode;
+ }
+    public void postalcode (String aPostalcode){
+        postalcode = aPostalcode;
+}
+    public String getpostalcode() {
+
+    return postalcode;
+ }  
+ public String toString(){
+    return "Location(name: " + name +
+    ",latitude: " +lattitude +
+    ",longitude :" + longitude +
+    ",description :" + description +
+    ",address :" + address +
+    ",country :" + country +
+    ",city :"  + city +
+    ",postalcode :" + postalcode + "}";
+ }   
+}
